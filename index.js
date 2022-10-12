@@ -10,7 +10,7 @@ const user = document.querySelector('.input')
 const greeting = document.querySelector('.greeting')
 
 btnOpenModal.addEventListener('click', function (e) {
-  //   добавила e.preventDefault() в связи с тем, что кнопка Submit не позволяла открывать модальное окно
+  //добавила e.preventDefault() в связи с тем, что кнопка Submit не позволяла открывать модальное окно
   e.preventDefault()
   modal.classList.remove('hidden')
   console.log(user.value)

@@ -44,6 +44,7 @@ input {
   display: block;
 }
 .btn {
+  display: block;
   margin: 30px auto;
   padding: 8px 10px;
   color: green;
@@ -54,9 +55,8 @@ input {
 }
 
 .modal {
-  /* position: absolute;
-  right: 232px;
-  top: 117px; */
+  position: absolute;
+  top: center;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 20px;
@@ -72,12 +72,14 @@ input {
 }
 
 .cancel {
+  display: inline-block;
   color: red;
   margin-left: 250px;
   margin-bottom: 0;
   background-color: beige;
 }
 .confirm {
+  display: inline-block;
   margin-left: 30px;
   margin-bottom: 0;
   background-color: beige;

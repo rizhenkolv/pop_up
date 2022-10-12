@@ -9,7 +9,9 @@ const text = document.querySelector('.text')
 const user = document.querySelector('.input')
 const greeting = document.querySelector('.greeting')
 
-btnOpenModal.addEventListener('click', function () {
+btnOpenModal.addEventListener('click', function (e) {
+  //   добавила e.preventDefault() в связи с тем, что кнопка Submit не позволяла открывать модальное окно
+  e.preventDefault()
   modal.classList.remove('hidden')
   console.log(user.value)
   text.innerHTML = `Please confirm account creation for ${user.value}`
@@ -25,5 +27,5 @@ btnConfirm.addEventListener('click', function () {
   pageImage.classList.remove('hidden')
   pageMain.classList.add('hidden')
   modal.classList.add('hidden')
-  greeting.append(`Hello ${user.value}!!`)
+  greeting.append(`Hello user with ${user.value}!!`)
 })

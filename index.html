@@ -11,22 +11,29 @@
     <main>
       <div class="container">
         <div class="page_main">
-          <p class="header">Create account:</p>
+          <form class="form">
+            <fieldset>
+              <legend>Create account</legend>
 
-          <form action="" class="form">
-            <label for="email">Email(required)</label>
-            <input type="email" name="name" class="input" />
-            <label for="password">Password(required)</label>
-            <input type="text" name="password" />
+              <label for="email">Email(required)</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="input"
+                required
+              />
+              <label for="password">Password(required)</label>
+              <input type="password" id="password" name="password" required />
+              <button type="submit" class="btn">Submit</button>
+            </fieldset>
           </form>
-
-          <button type="submit" class="btn">Submit</button>
         </div>
 
         <div class="modal hidden">
           <p class="text"></p>
           <button class="btn cancel">cancel</button>
-          <button class="btn confirm">confirm</button>
+          <button type="submit" class="btn confirm">confirm</button>
         </div>
 
         <div class="page_image hidden">

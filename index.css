@@ -50,12 +50,13 @@ input {
   font-size: 18px;
   border-radius: 5px;
   background-color: white;
+  align-items: center;
 }
 
 .modal {
-  position: absolute;
+  /* position: absolute;
   right: 232px;
-  top: 117px;
+  top: 117px; */
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 20px;
@@ -81,6 +82,14 @@ input {
   margin-bottom: 0;
   background-color: beige;
 }
-.img_confirm {
-  display: block;
+.page_image {
+  position: absolute;
+  top: 100px;
+}
+.img {
+  width: 600px;
+}
+.greeting {
+  margin-bottom: 30px;
+  text-align: center;
 }

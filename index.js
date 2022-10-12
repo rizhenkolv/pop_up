@@ -1,6 +1,7 @@
 'use strict'
 const modal = document.querySelector('.modal')
-const image = document.querySelector('.img-confirm')
+const pageMain = document.querySelector('.page_main')
+const pageImage = document.querySelector('.page_image')
 const btnConfirm = document.querySelector('.btn.confirm')
 const btnCloseModal = document.querySelector('.btn.cancel')
 const btnOpenModal = document.querySelector('.btn')
@@ -13,5 +14,7 @@ btnCloseModal.addEventListener('click', function () {
 })
 btnConfirm.addEventListener('click', function () {
   console.log('click')
-  image.classList.remove('hidden')
+  pageImage.classList.remove('hidden')
+  pageMain.classList.add('hidden')
+  modal.classList.add('hidden')
 })

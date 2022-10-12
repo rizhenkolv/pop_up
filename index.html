@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <p class="header">Create account</p>
+        <form action="" class="form">
+          <label for="email">Email(required)</label>
+          <input type="text" name="name" />
+          <label for="password">Password(required)</label>
+          <input type="text" name="password" />
+        </form>
+        <button type="submit" class="btn">Submit</button>
+      </div>
+
+      <div class="modal hidden">
+        <p>Please confirm account creation for {user_email}</p>
+        <button class="btn cancel">cancel</button>
+        <button class="btn confirm">confirm</button>
+      </div>
+
+      <div class="img-confirm hidden">
+        <img src="/img/pexels-christian-gonzalez-v-4781328.jpg" alt="img" />
+      </div>
+    </main>
+    <script src="/index.js"></script>
+  </body>
+</html>
